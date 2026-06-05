@@ -18,9 +18,9 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install mlflow==2.19.0 scikit-learn pandas numpy
+          pip install scikit-learn pandas numpy
       
-      - name: Run MLflow Project
+      - name: Run training
         run: |
           cd MLProject
-          mlflow run . -P data_file=heart_preprocessed.csv
+          python modelling.py heart_preprocessed.csv
