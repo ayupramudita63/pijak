@@ -11,17 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Install Miniconda
-        uses: conda-incubator/setup-miniconda@v2
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          auto-update-conda: true
           python-version: '3.12.7'
       
       - name: Install dependencies
         run: |
-          pip install mlflow scikit-learn pandas numpy
+          pip install mlflow==2.19.0 scikit-learn pandas numpy
       
       - name: Run MLflow Project
         run: |
           cd MLProject
-          mlflow run . -P data_file=heart_preprocessed.csv --env-manager=local
+          mlflow run . -P data_file=heart_preprocessed.csv
