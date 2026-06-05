@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/328505579868123295/2df60567b7c84d79acaaa2ca37a9889f/artifacts
+end_time: 1780241491031
+entry_point_name: ''
+experiment_id: '328505579868123295'
+lifecycle_stage: active
+run_id: 2df60567b7c84d79acaaa2ca37a9889f
+run_name: GridSearch_RF_Skilled
+run_uuid: 2df60567b7c84d79acaaa2ca37a9889f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780241469163
+status: 3
+tags: []
+user_id: asus
